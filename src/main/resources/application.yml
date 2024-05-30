@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: JPAUserAuth
+    datasource:
+        password: root
+        url: jdbc:postgresql://localhost:5432/jpa_user_auth
+        username: postgres
+    jpa:
+        show-sql: true
+#        generate-ddl: true
+        hibernate:
+            ddl-auto: create
