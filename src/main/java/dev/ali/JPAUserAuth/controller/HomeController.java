@@ -50,4 +50,8 @@ public class HomeController {
     public String getUser(@AuthenticationPrincipal UserDetails userDetails) {
         return "User Details: " + userDetails.getUsername();
     }
+    @GetMapping("/another")
+    public String another() {
+        return "another";
+    }
 }
