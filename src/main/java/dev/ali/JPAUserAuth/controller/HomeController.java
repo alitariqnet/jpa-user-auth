@@ -49,5 +49,5 @@ public class HomeController {
     @GetMapping("/userdetails")
     public String getUser(@AuthenticationPrincipal UserDetails userDetails) {
         return "User Details: " + userDetails.getUsername();
-    }
+
 }
